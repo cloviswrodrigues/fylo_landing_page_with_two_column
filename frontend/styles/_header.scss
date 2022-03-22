@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding-top: 1rem;
+
+    &__logo {
+        width: 10rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .nav {
+
+        &__menu {
+            display: flex;
+            flex-direction: row;
+
+            &-item {
+                font-family: Raleway, sans-serif;
+                font-size: 1.4rem;
+                margin-left: 2rem;
+            }
+        }
+    }
+}
