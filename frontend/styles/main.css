@@ -144,4 +144,31 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: .4rem;
   padding: 1.4rem 2rem;
 }
+
+.bg-curve {
+  height: 7rem;
+  background: url(../assets/bg-curve-mobile.svg) no-repeat center;
+  background-size: cover;
+}
+
+.section-secondary {
+  padding: 0 5vw;
+  background-color: #f6f6fe;
+}
+
+.section-secondary__img img {
+  width: 100%;
+}
+
+.section-secondary__title {
+  margin-top: 5rem;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.section-secondary__info {
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+  color: #070439;
+}
 /*# sourceMappingURL=main.css.map */
