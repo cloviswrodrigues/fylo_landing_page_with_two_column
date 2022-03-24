@@ -17,6 +17,11 @@ ul li {
   list-style-type: none;
 }
 
+a {
+  all: unset;
+  cursor: pointer;
+}
+
 html {
   font-family: Open Sans, sans-serif;
   font-size: 10px;
@@ -154,6 +159,7 @@ h1, h2, h3, h4, h5, h6 {
 .section-secondary {
   padding: 0 5vw;
   background-color: #f6f6fe;
+  font-size: 1.4rem;
 }
 
 .section-secondary__img img {
@@ -168,7 +174,25 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-secondary__info {
   margin-top: 1.5rem;
-  font-size: 1.4rem;
   color: #070439;
+}
+
+.section-secondary__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 15.5rem;
+  height: 2rem;
+  margin: 4rem auto 3rem;
+  color: #3c9f8f;
+  border-bottom: 0.1rem solid #3c9f8f;
+  padding-bottom: .5rem;
+}
+
+.section-secondary__link .img {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

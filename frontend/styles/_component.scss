@@ -62,7 +62,8 @@
 
 .section-secondary {
     padding: 0 5vw;
-    background-color: $color-light-grayish-blue;    
+    background-color: $color-light-grayish-blue;      
+    font-size: 1.4rem;  
 
     &__img {
 
@@ -79,7 +80,21 @@
 
     &__info {
         margin-top: 1.5rem;
-        font-size: 1.4rem;
         color: $color-very-dark-blue;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: space-between;
+        width: 15.5rem;
+        height: 2rem;
+        margin: 4rem auto 3rem;        
+        color: $color-moderate-cyan;
+        border-bottom: .1rem solid $color-moderate-cyan;
+        padding-bottom: .5rem;
+
+        .img {
+            width: 100%;
+        }
     }
 }
