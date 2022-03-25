@@ -157,7 +157,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-secondary {
-  padding: 0 5vw;
+  padding: 0 5vw 8rem;
   background-color: #f6f6fe;
   font-size: 1.4rem;
 }
@@ -186,7 +186,7 @@ h1, h2, h3, h4, h5, h6 {
           justify-content: space-between;
   width: 15.5rem;
   height: 2rem;
-  margin: 4rem auto 3rem;
+  margin: 4rem auto 4rem;
   color: #3c9f8f;
   border-bottom: 0.1rem solid #3c9f8f;
   padding-bottom: .5rem;
@@ -194,5 +194,57 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-secondary__link .img {
   width: 100%;
+}
+
+.card {
+  background-color: white;
+  width: 85%;
+  border-radius: .5rem;
+  -webkit-box-shadow: 0 0 1.5rem 0.1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 1.5rem 0.1rem rgba(0, 0, 0, 0.1);
+  margin: auto;
+  padding: 2.5rem;
+}
+
+.card__quote {
+  font-size: 1rem;
+}
+
+.card__quote::before {
+  content: url(../assets/icon-quotes.svg);
+  display: block;
+  margin-bottom: .5rem;
+}
+
+.card__profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+.card__img {
+  width: 3rem;
+}
+
+.card__img img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.card__user {
+  margin-left: 1rem;
+}
+
+.card__name {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.card__role {
+  font-size: .8rem;
 }
 /*# sourceMappingURL=main.css.map */

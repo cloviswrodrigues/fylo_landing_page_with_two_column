@@ -61,7 +61,7 @@
 }
 
 .section-secondary {
-    padding: 0 5vw;
+    padding: 0 5vw 8rem;
     background-color: $color-light-grayish-blue;      
     font-size: 1.4rem;  
 
@@ -88,7 +88,7 @@
         justify-content: space-between;
         width: 15.5rem;
         height: 2rem;
-        margin: 4rem auto 3rem;        
+        margin: 4rem auto 4rem;        
         color: $color-moderate-cyan;
         border-bottom: .1rem solid $color-moderate-cyan;
         padding-bottom: .5rem;
@@ -96,5 +96,52 @@
         .img {
             width: 100%;
         }
+    }
+}
+
+.card {
+    background-color: $color-white;
+    width: 85%;
+    border-radius: .5rem;
+    box-shadow: 0 0 1.5rem .1rem rgba(0, 0, 0, 0.1);
+    margin: auto;
+    padding: 2.5rem;
+
+    &__quote {
+        font-size: 1rem;
+
+        &::before {
+            content: url(../assets/icon-quotes.svg);
+            display: block;
+            margin-bottom: .5rem;
+        }
+    }
+
+    &__profile {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    &__img {
+        width: 3rem;
+
+        img {
+            width: 100%;
+            border-radius: 50%;
+        }        
+    }
+
+    &__user {
+        margin-left: 1rem;
+    }
+
+    &__name {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    &__role {
+        font-size: .8rem;
     }
 }
