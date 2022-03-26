@@ -1,0 +1,12 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $color-very-dark-blue;
+    padding: 5rem 3rem;
+    color: $color-light-grayish-blue;
+
+    &__logo {
+        filter: invert(100) brightness(100);
+    }
+}

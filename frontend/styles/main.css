@@ -74,6 +74,27 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 2rem;
 }
 
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #070439;
+  padding: 5rem 3rem;
+  color: #f6f6fe;
+}
+
+.footer__logo {
+  -webkit-filter: invert(100) brightness(100);
+          filter: invert(100) brightness(100);
+}
+
 .section-main {
   width: 90%;
   margin: 6rem auto;
@@ -98,7 +119,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.4rem;
 }
 
-.form {
+.section-main .form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -108,32 +129,32 @@ h1, h2, h3, h4, h5, h6 {
           flex-direction: column;
 }
 
-.form__input {
+.section-main .form__input {
   padding: 1.2rem 2rem;
   margin-bottom: 1rem;
   border: 1px solid #070439;
   border-radius: .4rem;
 }
 
-.form__input::-webkit-input-placeholder {
+.section-main .form__input::-webkit-input-placeholder {
   font-family: Raleway;
   font-size: 1.2rem;
   color: #bfbfbf;
 }
 
-.form__input:-ms-input-placeholder {
+.section-main .form__input:-ms-input-placeholder {
   font-family: Raleway;
   font-size: 1.2rem;
   color: #bfbfbf;
 }
 
-.form__input::-ms-input-placeholder {
+.section-main .form__input::-ms-input-placeholder {
   font-family: Raleway;
   font-size: 1.2rem;
   color: #bfbfbf;
 }
 
-.form__input::placeholder {
+.section-main .form__input::placeholder {
   font-family: Raleway;
   font-size: 1.2rem;
   color: #bfbfbf;
@@ -246,5 +267,73 @@ h1, h2, h3, h4, h5, h6 {
 
 .card__role {
   font-size: .8rem;
+}
+
+.section-third {
+  background-color: #585989;
+  padding: 5rem 3rem 6rem;
+  text-align: center;
+}
+
+.section-third__title {
+  font-size: 1.8rem;
+  color: #f6f6fe;
+}
+
+.section-third__info {
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+  font-size: 1.5rem;
+  color: #f6f6fe;
+}
+
+.section-third .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 85%;
+  margin: auto;
+}
+
+.section-third .form__input {
+  padding: 1.2rem .8rem;
+  margin-bottom: 1rem;
+  border: 1px solid white;
+  border-radius: .2rem;
+}
+
+.section-third .form__input::-webkit-input-placeholder {
+  font-family: Raleway;
+  font-size: 1.2rem;
+  color: #bfbfbf;
+}
+
+.section-third .form__input:-ms-input-placeholder {
+  font-family: Raleway;
+  font-size: 1.2rem;
+  color: #bfbfbf;
+}
+
+.section-third .form__input::-ms-input-placeholder {
+  font-family: Raleway;
+  font-size: 1.2rem;
+  color: #bfbfbf;
+}
+
+.section-third .form__input::placeholder {
+  font-family: Raleway;
+  font-size: 1.2rem;
+  color: #bfbfbf;
+}
+
+.section-third .form .btn {
+  font-size: 1.2rem;
+  border-radius: .2rem;
+  -webkit-box-shadow: 0 0.2rem 0.5rem 0.1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.2rem 0.5rem 0.1rem rgba(0, 0, 0, 0.1);
 }
 /*# sourceMappingURL=main.css.map */
