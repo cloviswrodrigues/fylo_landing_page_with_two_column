@@ -149,6 +149,10 @@ h1, h2, h3, h4, h5, h6 {
   gap: 1.5rem;
 }
 
+.footer__links .link__group--item a:hover {
+  color: #628af9;
+}
+
 .footer__social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -164,6 +168,11 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid #f6f6fe;
   border-radius: 50%;
   padding: .5rem;
+}
+
+.footer__social--icon:hover {
+  border: 1px solid #628af9;
+  color: #628af9;
 }
 
 .footer .attribution {
@@ -246,6 +255,11 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
   border-radius: .4rem;
   padding: 1.4rem 2rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #628af9;
 }
 
 .bg-curve {
@@ -292,6 +306,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-secondary__link .img {
   width: 100%;
+}
+
+.section-secondary__link:hover {
+  -webkit-filter: saturate(300%);
+          filter: saturate(300%);
 }
 
 .card {
