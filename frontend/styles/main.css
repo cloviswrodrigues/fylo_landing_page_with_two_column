@@ -74,6 +74,15 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 2rem;
 }
 
+@media screen and (min-width: 900px) {
+  .header__logo {
+    width: 12rem;
+  }
+  .header .nav__menu-item {
+    margin-left: 5rem;
+  }
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -244,6 +253,51 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Raleway;
   font-size: 1.2rem;
   color: #bfbfbf;
+}
+
+@media screen and (min-width: 900px) {
+  .section-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 5rem;
+  }
+  .section-main__call {
+    text-align: left;
+  }
+  .section-main__call .title {
+    font-size: 3.8rem;
+  }
+  .section-main__call .description {
+    font-size: 1.6rem;
+    width: 85%;
+  }
+  .section-main .form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 2rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section-main .form__input {
+    width: 30rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .section-main .form .btn {
+    width: 100%;
+    max-width: 16rem;
+  }
 }
 
 .btn {

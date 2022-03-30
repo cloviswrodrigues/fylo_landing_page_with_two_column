@@ -1,6 +1,6 @@
 .section-main {    
     width: 90%;
-    margin: 6rem auto;
+    margin: 6rem auto;    
 
     &__img {
         img {
@@ -38,6 +38,45 @@
                 font-family: Raleway;
                 font-size: 1.2rem;
                 color: $color-light-gray;
+            }
+        }
+    }
+
+    
+
+    @media screen and (min-width: $break-desktop) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 5rem;
+
+        &__call {
+            text-align: left;            
+    
+            .title {
+                font-size: 3.8rem;
+            }
+    
+            .description {
+                font-size: 1.6rem;
+                width: 85%;
+            }        
+        }
+
+        .form {
+            flex-direction: row;
+            gap: 2rem;
+            align-items: center;
+
+            &__input {
+                width: 30rem;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 16rem;
             }
         }
     }

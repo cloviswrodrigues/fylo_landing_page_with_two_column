@@ -27,4 +27,21 @@
             }
         }
     }
+
+    @media screen and (min-width: $break-desktop) {
+
+        &__logo {
+            width: 12rem;
+        }
+
+        .nav {
+
+            &__menu {
+    
+                &-item {
+                    margin-left: 5rem;
+                }
+            }
+        }
+    }
 }
