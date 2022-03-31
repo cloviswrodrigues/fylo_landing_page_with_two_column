@@ -11,6 +11,7 @@ html {
 
 .container {
   width: 90%;
+  max-width: 1440px;
 }
 
 ul li {
@@ -97,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #070439;
   padding: 5rem 3rem;
   font-size: 1.5rem;
-  color: #f6f6fe;
+  color: #f8f8fe;
 }
 
 .footer__logo {
@@ -174,7 +175,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer__social--icon {
-  border: 1px solid #f6f6fe;
+  border: 1px solid #f8f8fe;
   border-radius: 50%;
   padding: .5rem;
 }
@@ -192,7 +193,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-main {
   width: 90%;
-  margin: 6rem auto;
+  margin: 6rem auto 12vh;
 }
 
 .section-main__img img {
@@ -302,7 +303,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn {
   background-color: #3065f8;
-  color: #f6f6fe;
+  color: #f8f8fe;
   font-family: Raleway;
   font-size: 1.4rem;
   font-weight: 700;
@@ -317,15 +318,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg-curve {
-  height: 7rem;
+  height: 11.4rem;
   background: url(../assets/bg-curve-mobile.svg) no-repeat center;
   background-size: cover;
 }
 
+@media screen and (min-width: 900px) {
+  .bg-curve {
+    background: url(../assets/bg-curve-desktop.svg) no-repeat center;
+    background-size: contain;
+    height: 7.95vw;
+  }
+}
+
+.bg-color-light-grayish-blue {
+  background-color: #f8f8fe;
+}
+
 .section-secondary {
-  padding: 0 5vw 8rem;
-  background-color: #f6f6fe;
+  padding-bottom: 8rem;
   font-size: 1.4rem;
+  margin: auto;
 }
 
 .section-secondary__img img {
@@ -365,6 +378,32 @@ h1, h2, h3, h4, h5, h6 {
 .section-secondary__link:hover {
   -webkit-filter: saturate(300%);
           filter: saturate(300%);
+}
+
+@media screen and (min-width: 900px) {
+  .section-secondary {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .section-secondary__title {
+    text-align: left;
+    font-size: 3.6rem;
+  }
+  .section-secondary__info {
+    width: 65%;
+  }
+  .section-secondary__img {
+    max-width: 55rem;
+    padding: 6rem 2rem;
+  }
+  .section-secondary__link {
+    margin: 1rem auto 4rem 0;
+  }
 }
 
 .card {
@@ -419,6 +458,16 @@ h1, h2, h3, h4, h5, h6 {
   font-size: .8rem;
 }
 
+@media screen and (min-width: 900px) {
+  .card {
+    max-width: 30rem;
+    margin: 0;
+  }
+  .card__quote {
+    font-size: 1.2rem;
+  }
+}
+
 .section-third {
   background-color: #585989;
   padding: 5rem 3rem 6rem;
@@ -427,14 +476,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-third__title {
   font-size: 1.8rem;
-  color: #f6f6fe;
+  color: #f8f8fe;
 }
 
 .section-third__info {
   margin-top: 2rem;
   margin-bottom: 2.5rem;
   font-size: 1.5rem;
-  color: #f6f6fe;
+  color: #f8f8fe;
 }
 
 .section-third .form {

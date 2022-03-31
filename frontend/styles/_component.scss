@@ -1,6 +1,6 @@
 .section-main {    
     width: 90%;
-    margin: 6rem auto;    
+    margin: 6rem auto 12vh;    
 
     &__img {
         img {
@@ -99,15 +99,25 @@
 }
 
 .bg-curve {
-    height: 7rem;
+    height: 11.4rem;
     background: url(../assets/bg-curve-mobile.svg) no-repeat center;
     background-size: cover;
+
+    @media screen and (min-width: $break-desktop) {
+        background: url(../assets/bg-curve-desktop.svg) no-repeat center;
+        background-size: contain;
+        height: 7.95vw;
+    }
+}
+
+.bg-color-light-grayish-blue {    
+    background-color: $color-light-grayish-blue;  
 }
 
 .section-secondary {
-    padding: 0 5vw 8rem;
-    background-color: $color-light-grayish-blue;      
+    padding-bottom: 8rem;    
     font-size: 1.4rem;  
+    margin: auto;
 
     &__img {
 
@@ -144,6 +154,29 @@
         &:hover {
             filter: saturate(300%);
         } 
+    }
+
+    @media screen and (min-width: $break-desktop) {
+        display: flex;
+        flex-direction: row-reverse;
+
+        &__title {
+            text-align: left;
+            font-size: 3.6rem;
+        }
+
+        &__info {
+            width: 65%;
+        }
+        
+        &__img {
+            max-width: 55rem;
+            padding: 6rem 2rem;
+        }
+
+        &__link {
+            margin: 1rem auto 4rem 0;
+        }
     }
 }
 
@@ -191,6 +224,16 @@
 
     &__role {
         font-size: .8rem;
+    }
+
+    @media screen and (min-width: $break-desktop) {
+        max-width: 30rem;
+        margin: 0;
+
+        &__quote {
+            font-size: 1.2rem;
+        }
+    
     }
 }
 

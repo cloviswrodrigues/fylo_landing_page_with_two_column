@@ -7,7 +7,7 @@ $color-bright-blue: hsl(224, 93%, 58%);
 $color-moderate-cyan: hsl(170, 45%, 43%);
 
 // Neutral
-$color-light-grayish-blue: hsl(240, 75%, 98%);
+$color-light-grayish-blue: #f8f8fe;
 $color-light-gray: hsl(0, 0%, 75%);
 
 $color-white: white;
@@ -26,6 +26,7 @@ html {
 
 .container {
     width: 90%;
+    max-width: 1440px;
 }
 
 ul li {
