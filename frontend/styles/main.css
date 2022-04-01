@@ -335,6 +335,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #f8f8fe;
 }
 
+.bg-color-desaturated-blue {
+  background-color: #585989;
+}
+
 .section-secondary {
   padding-bottom: 8rem;
   font-size: 1.4rem;
@@ -469,8 +473,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-third {
-  background-color: #585989;
-  padding: 5rem 3rem 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  padding: 5rem 0rem 6rem;
   text-align: center;
 }
 
@@ -483,7 +494,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 2rem;
   margin-bottom: 2.5rem;
   font-size: 1.5rem;
-  color: #f8f8fe;
+  color: #bfbfbf;
 }
 
 .section-third .form {
@@ -534,5 +545,34 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: .2rem;
   -webkit-box-shadow: 0 0.2rem 0.5rem 0.1rem rgba(0, 0, 0, 0.1);
           box-shadow: 0 0.2rem 0.5rem 0.1rem rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 900px) {
+  .section-third {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left;
+    padding: 8rem 0rem 6rem;
+  }
+  .section-third .wrapper-one {
+    max-width: 45rem;
+  }
+  .section-third__title {
+    font-size: 2.5rem;
+  }
+  .section-third .wrapper-two {
+    width: 55rem;
+  }
+  .section-third .btn {
+    max-width: 18rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
