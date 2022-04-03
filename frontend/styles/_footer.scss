@@ -1,14 +1,18 @@
-.footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.footer {    
     background-color: $color-very-dark-blue;
-    padding: 5rem 3rem;
+    padding: 5rem 0;
     font-size: 1.5rem;
     color: $color-light-grayish-blue;
 
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
     &__logo {
         filter: invert(100) brightness(100);
+        margin: auto;
     }
 
     &__contact {
@@ -83,5 +87,22 @@
         font-size: .8rem;
         text-align: center;
         margin-top: 2rem;
-    }
+    }         
+
+    @media screen and (min-width: $break-desktop) {
+        padding: 10rem 0;
+
+        .container {
+            margin: auto;
+        }
+
+        .wrapper {            
+            flex-direction: row; 
+            width: 90%;
+        } 
+
+        .attribution {
+            margin-top: 8rem;
+        }     
+    }   
 }
