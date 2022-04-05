@@ -87,15 +87,15 @@
         font-size: .8rem;
         text-align: center;
         margin-top: 2rem;
-    }         
+    }      
+    
+    .container {
+        margin: auto;
+    }
 
     @media screen and (min-width: $break-desktop) {
         padding: 10rem 0;
-
-        .container {
-            margin: auto;
-        }
-
+        
         .wrapper {            
             flex-direction: row; 
             width: 90%;
