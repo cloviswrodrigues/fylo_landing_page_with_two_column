@@ -9,6 +9,9 @@ function initForm(form) {
         e.preventDefault();    
         let emailValid = validateInput(inputEmail);
 
+        if (!emailValid) {
+            inputEmail.value = ''
+        }
     })
 
     form.addEventListener('focusin', (e) => {
@@ -22,7 +25,7 @@ function validateInput(inputEmail) {
         activeErrorInputEmail(inputEmail, true);
         return true;
     }else{
-        activeErrorInputEmail(inputEmail, false);
+        activeSucessInputEmail(inputEmail, true);
         return false;
     }
 }
@@ -34,23 +37,25 @@ function isValidEmail(email){
 
 function activeErrorInputEmail(inputEmail, isError) {
     console.log('inputEmail:'+inputEmail)
-    spanMsg = inputEmail.nextElementSibling;
+    spanMsg = inputEmail.parentElement.querySelector('.msg__error');
     if (isError){
         inputEmail.classList.add('input__error');
-        spanMsg.classList.add('msg__error');
+        spanMsg.classList.add('active');
     }else {
         inputEmail.classList.remove('input__error');
-        spanMsg.classList.remove('msg__error');
+        spanMsg.classList.remove('active');
     }
 }
 
 function activeSucessInputEmail(inputEmail, isSucess) {
-    spanMsg = inputEmail.nextElementSibling;
+    spanMsg = inputEmail.parentElement.querySelector('.msg__success');
+
+    console.log('spanMsg: ',spanMsg)
     if (isSucess){
         inputEmail.classList.add('input__sucess');
-        spanMsg.classList.add('msg__sucess');
+        spanMsg.classList.add('active');
     } else {
         inputEmail.classList.remove('input__sucess');
-        spanMsg.classList.remove('msg__sucess');
-    }
+        spanMsg.classList.remove('active');
+    }    
 }

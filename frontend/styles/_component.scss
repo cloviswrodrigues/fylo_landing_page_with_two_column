@@ -317,22 +317,23 @@
 .form__field {
     position: relative;
     
+    .active {
+        display: block !important;
+    }
+    
     .msg {
+        font-size: 1.2rem;
+        font-weight: 400;
         margin-top: .5rem;
         display: none;
     }
 
     .msg__error {
-        display: block;
         color: $color-light-red;
-        font-weight: 700;
     }
 
-    .msg__sucess {
-        display: block;
+    .msg__success {
         color: $color-light-green;
-        font-weight: 700;
-        opacity: 1;
     }
 
     .input__error {

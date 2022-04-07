@@ -613,22 +613,23 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
+.form__field .active {
+  display: block !important;
+}
+
 .form__field .msg {
+  font-size: 1.2rem;
+  font-weight: 400;
   margin-top: .5rem;
   display: none;
 }
 
 .form__field .msg__error {
-  display: block;
   color: #ff4242;
-  font-weight: 700;
 }
 
-.form__field .msg__sucess {
-  display: block;
+.form__field .msg__success {
   color: #16dc52;
-  font-weight: 700;
-  opacity: 1;
 }
 
 .form__field .input__error {
