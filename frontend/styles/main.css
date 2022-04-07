@@ -316,9 +316,9 @@ h1, h2, h3, h4, h5, h6 {
         -ms-flex-direction: row;
             flex-direction: row;
     gap: 2rem;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .section-main .form__input {
     width: 30rem;
@@ -328,6 +328,7 @@ h1, h2, h3, h4, h5, h6 {
   .section-main .form .btn {
     width: 100%;
     max-width: 16rem;
+    max-height: 4.1rem;
   }
 }
 
@@ -537,11 +538,12 @@ h1, h2, h3, h4, h5, h6 {
           flex-direction: column;
   width: 85%;
   margin: auto;
+  position: relative;
 }
 
 .section-third .form__input {
+  width: 100%;
   padding: 1.2rem .8rem;
-  margin-bottom: 1rem;
   border: 1px solid white;
   border-radius: .2rem;
 }
@@ -575,6 +577,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: .2rem;
   -webkit-box-shadow: 0 0.2rem 0.5rem 0.1rem rgba(0, 0, 0, 0.1);
           box-shadow: 0 0.2rem 0.5rem 0.1rem rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
 }
 
 @media screen and (min-width: 900px) {
@@ -604,5 +607,32 @@ h1, h2, h3, h4, h5, h6 {
   .section-third .btn {
     max-width: 18rem;
   }
+}
+
+.form__field {
+  position: relative;
+}
+
+.form__field .msg {
+  margin-top: .5rem;
+  display: none;
+}
+
+.form__field .msg__error {
+  display: block;
+  color: #ff4242;
+  font-weight: 700;
+}
+
+.form__field .msg__sucess {
+  display: block;
+  color: #16dc52;
+  font-weight: 700;
+  opacity: 1;
+}
+
+.form__field .input__error {
+  outline: 1px solid #ff4242;
+  border: none !important;
 }
 /*# sourceMappingURL=main.css.map */

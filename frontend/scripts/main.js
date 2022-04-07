@@ -1,28 +1,28 @@
-const form = document.getElementsByClassName('js-form')
-const inputEmail = document.getElementById('js-email');
-const spanEmailMsgError = document.getElementById('js-email-msg-error');
-const spanEmailMsgSucess = document.getElementById('js-email-msg-sucess');
+const forms = document.querySelectorAll('.js-form')
 
-form.addEventListener('submit', (e) => {         
-    e.preventDefault();   
-    let validate = validateInput();
-    if (!validate) {
-        activeSucessInputEmail(true);
-        inputEmail.value = ''
-    }
-})
+forms.forEach(initForm)
 
-form.addEventListener('focusin', (e) => {
-    activeErrorInputEmail(false);
-    activeSucessInputEmail(false);
-});
+function initForm(form) {
+    let inputEmail = form.querySelector('.form__input');
 
-function validateInput() {
+    form.addEventListener('submit', (e) => {         
+        e.preventDefault();    
+        let emailValid = validateInput(inputEmail);
+
+    })
+
+    form.addEventListener('focusin', (e) => {
+        activeErrorInputEmail(inputEmail, false);
+        activeSucessInputEmail(inputEmail, false);
+    });
+}
+
+function validateInput(inputEmail) {
    if (!isValidEmail(inputEmail.value)){
-        activeErrorInputEmail(true);
+        activeErrorInputEmail(inputEmail, true);
         return true;
     }else{
-        activeErrorInputEmail(false);
+        activeErrorInputEmail(inputEmail, false);
         return false;
     }
 }
@@ -32,22 +32,25 @@ function isValidEmail(email){
     return regex.exec(email) == null ? false : true;
 }
 
-function activeErrorInputEmail(active) {
-    if (active){
-        inputEmail.classList.add('active-error-input');
-        spanEmailMsgError.classList.add('active');
+function activeErrorInputEmail(inputEmail, isError) {
+    console.log('inputEmail:'+inputEmail)
+    spanMsg = inputEmail.nextElementSibling;
+    if (isError){
+        inputEmail.classList.add('input__error');
+        spanMsg.classList.add('msg__error');
     }else {
-        inputEmail.classList.remove('active-error-input');
-        spanEmailMsgError.classList.remove('active');
+        inputEmail.classList.remove('input__error');
+        spanMsg.classList.remove('msg__error');
     }
 }
 
-function activeSucessInputEmail(active) {
-    if (active){
-        inputEmail.classList.add('active-sucess-input');
-        spanEmailMsgSucess.classList.add('active');
+function activeSucessInputEmail(inputEmail, isSucess) {
+    spanMsg = inputEmail.nextElementSibling;
+    if (isSucess){
+        inputEmail.classList.add('input__sucess');
+        spanMsg.classList.add('msg__sucess');
     } else {
-        inputEmail.classList.remove('active-sucess-input');
-        spanEmailMsgSucess.classList.remove('active');
+        inputEmail.classList.remove('input__sucess');
+        spanMsg.classList.remove('msg__sucess');
     }
 }
