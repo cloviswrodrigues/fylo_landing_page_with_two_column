@@ -29,8 +29,8 @@
         flex-direction: column;
     
         &__input {
+            width: 100%;
             padding: 1.2rem 2rem;
-            margin-bottom: 1rem;
             border: 1px solid $color-very-dark-blue;
             border-radius: .4rem;
     
@@ -39,6 +39,10 @@
                 font-size: 1.2rem;
                 color: $color-light-gray;
             }
+        }
+
+        .btn {            
+            margin-top: 1rem;
         }
     }
 
@@ -324,6 +328,7 @@
     .msg {
         font-size: 1.2rem;
         font-weight: 400;
+        text-align: left;
         margin-top: .5rem;
         display: none;
     }

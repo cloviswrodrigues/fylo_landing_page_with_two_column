@@ -256,8 +256,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-main .form__input {
+  width: 100%;
   padding: 1.2rem 2rem;
-  margin-bottom: 1rem;
   border: 1px solid #070439;
   border-radius: .4rem;
 }
@@ -284,6 +284,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Raleway;
   font-size: 1.2rem;
   color: #bfbfbf;
+}
+
+.section-main .form .btn {
+  margin-top: 1rem;
 }
 
 @media screen and (min-width: 900px) {
@@ -620,6 +624,7 @@ h1, h2, h3, h4, h5, h6 {
 .form__field .msg {
   font-size: 1.2rem;
   font-weight: 400;
+  text-align: left;
   margin-top: .5rem;
   display: none;
 }
