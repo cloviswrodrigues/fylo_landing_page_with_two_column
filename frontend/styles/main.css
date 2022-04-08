@@ -333,6 +333,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     max-width: 16rem;
     max-height: 4.1rem;
+    margin-top: 0;
   }
 }
 
@@ -574,6 +575,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Raleway;
   font-size: 1.2rem;
   color: #bfbfbf;
+}
+
+.section-third .form .msg__error, .section-third .form .msg__success {
+  color: #bfbfbf !important;
 }
 
 .section-third .form .btn {

@@ -82,6 +82,7 @@
                 width: 100%;
                 max-width: 16rem;
                 max-height: 4.1rem;
+                margin-top: 0;
             }
         }
     }
@@ -283,6 +284,10 @@
                 font-size: 1.2rem;
                 color: $color-light-gray;
             }
+        }        
+
+        .msg__error, .msg__success {
+            color: $color-light-gray !important;
         }
 
         .btn {

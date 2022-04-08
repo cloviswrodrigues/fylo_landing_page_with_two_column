@@ -52,10 +52,8 @@ function activeSucessInputEmail(inputEmail, isSucess) {
 
     console.log('spanMsg: ',spanMsg)
     if (isSucess){
-        inputEmail.classList.add('input__sucess');
         spanMsg.classList.add('active');
     } else {
-        inputEmail.classList.remove('input__sucess');
         spanMsg.classList.remove('active');
     }    
 }
