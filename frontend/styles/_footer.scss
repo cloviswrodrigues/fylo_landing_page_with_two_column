@@ -3,6 +3,7 @@
     padding: 5rem 0;
     font-size: 1.5rem;
     color: $color-light-grayish-blue;
+    position: relative;
 
     .wrapper {
         display: flex;
@@ -84,9 +85,12 @@
     }
 
     .attribution {
+        position: absolute;
+        display: block;
+        width: 100%;
+        bottom: 2rem;
         font-size: .8rem;
         text-align: center;
-        margin-top: 2rem;
     }      
     
     .container {
@@ -99,10 +103,26 @@
         .wrapper {            
             flex-direction: row; 
             width: 90%;
+            margin-top: 2rem;
         } 
 
         .attribution {
             margin-top: 8rem;
         }     
+
+        &__links {
+            margin-top: 0;
+        }
+
+        &__contact {
+
+            &--phone {
+                margin-top: 0;
+            }
+        }
+
+        &__social {
+            margin-top: 0;
+        }
     }   
 }

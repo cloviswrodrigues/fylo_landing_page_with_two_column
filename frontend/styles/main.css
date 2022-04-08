@@ -95,6 +95,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 5rem 0;
   font-size: 1.5rem;
   color: #f8f8fe;
+  position: relative;
 }
 
 .footer .wrapper {
@@ -196,9 +197,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer .attribution {
+  position: absolute;
+  display: block;
+  width: 100%;
+  bottom: 2rem;
   font-size: .8rem;
   text-align: center;
-  margin-top: 2rem;
 }
 
 .footer .container {
@@ -215,9 +219,19 @@ h1, h2, h3, h4, h5, h6 {
         -ms-flex-direction: row;
             flex-direction: row;
     width: 90%;
+    margin-top: 2rem;
   }
   .footer .attribution {
     margin-top: 8rem;
+  }
+  .footer__links {
+    margin-top: 0;
+  }
+  .footer__contact--phone {
+    margin-top: 0;
+  }
+  .footer__social {
+    margin-top: 0;
   }
 }
 
