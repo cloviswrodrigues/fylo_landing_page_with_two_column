@@ -111,8 +111,8 @@
 
     @media screen and (min-width: $break-desktop) {
         background: url(../assets/bg-curve-desktop.svg) no-repeat center;
-        background-size: contain;
-        height: 7.95vw;
+        background-size: cover;
+        height: 8vw;
     }
 }
 
